@@ -1,0 +1,77 @@
+/* Gaya umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    text-align: center; /* Title berada di tengah saat mode desktop */
+    margin: 0; /* Reset margin */
+}
+
+nav {
+    display: none; /* Sembunyikan navigasi pada awalnya */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.toggle-menu {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Sembunyikan toggle-menu pada awalnya */
+}
+
+/* Gaya untuk navigasi pada layar kecil (mobile) */
+@media screen and (max-width: 768px) {
+    .title {
+        text-align: left; /* Title berada di kiri saat mode mobile */
+        margin-left: 20px; /* Tambahkan margin pada title */
+    }
+
+    .toggle-menu {
+        display: block; /* Tampilkan toggle-menu saat mode mobile */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-end;
+        display: none;
+    }
+
+    nav.active {
+        display: block; /* Tampilkan navigasi saat tombol toggle ditekan */
+    }
+}
