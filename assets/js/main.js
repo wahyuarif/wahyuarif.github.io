@@ -267,4 +267,19 @@
    */
   new PureCounter();
 
+  const updateAge = () => {
+    const ageElement = document.querySelector('#display-age');
+    if (ageElement) {
+      const birthDate = new Date("1995-05-26");
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      ageElement.innerHTML = age;
+    }
+  }
+  updateAge();
+
 })()
