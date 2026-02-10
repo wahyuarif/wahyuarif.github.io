@@ -6,72 +6,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Portofolio | Wahyu Arif Kurniawan</title>
-  <meta content="Wahyu Arif Kurniawan - UI/UX Designer & Web Developer berbasis di Wonosobo. Spesialis desain grafis, layouting, dan pengembangan sistem web." name="description">
-  <meta content="Wahyu Arif Kurniawan, Web Developer Wonosobo, UI/UX Designer, Jasa Website Wonosobo, Portofolio Developer" name="keywords">
+  <meta name="description" content="Wahyu Arif Kurniawan - UI/UX Designer & Web Developer berbasis di Wonosobo. Spesialis desain grafis, layouting, dan pengembangan sistem web.">
+  <meta name="keywords" content="Wahyu Arif Kurniawan, Web Developer Wonosobo, UI/UX Designer, Jasa Website Wonosobo, Portofolio Developer">
 
+  <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://wahyuarif.github.io/">
   <meta property="og:title" content="Portofolio | Wahyu Arif Kurniawan">
   <meta property="og:description" content="UI/UX Designer & Web Developer. Mari bangun solusi digital yang inspiratif bersama saya.">
   <meta property="og:image" content="assets/img/profile-img.webp">
 
+  <!-- Icons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Google Fonts (non-blocking) -->
   <link rel="preload" as="style"
-  href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Poppins"
-  onload="this.rel='stylesheet'">
+        href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Poppins&display=swap"
+        onload="this.rel='stylesheet'">
 
-
-  <link rel="preload" href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link rel="preload" href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <!-- CORE CSS (BLOCKING – WAJIB) -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
-
-
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- NON CORE CSS (NON-BLOCKING) -->
+  <link rel="preload" as="style" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" onload="this.rel='stylesheet'">
+  <link rel="preload" as="style" href="assets/vendor/boxicons/css/boxicons.min.css" onload="this.rel='stylesheet'">
+  <link rel="preload" as="style" href="assets/vendor/aos/aos.css" onload="this.rel='stylesheet'">
+  <link rel="preload" as="style" href="assets/vendor/glightbox/css/glightbox.min.css" onload="this.rel='stylesheet'">
+  <link rel="preload" as="style" href="assets/vendor/swiper/swiper-bundle.min.css" onload="this.rel='stylesheet'">
+  <link rel="preload" as="style"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        onload="this.rel='stylesheet'">
+
+  <!-- Fallback -->
+  <noscript>
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+    <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
+
+  <!-- Schema -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Wahyu Arif Kurniawan",
-      "url": "https://wahyuarif.github.io",
-      "jobTitle": "Web Developer & UI/UX Designer",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Wonosobo",
-        "addressCountry": "ID"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/wahyu-arif-kurniawan-915110131/",
-        "https://www.instagram.com/wahyuarifkurniawan/"
-      ]
-    }
-</script>
-<style>
-.portfolio-wrap {
-  position: relative;
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Wahyu Arif Kurniawan",
+    "url": "https://wahyuarif.github.io",
+    "jobTitle": "Web Developer & UI/UX Designer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Wonosobo",
+      "addressCountry": "ID"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/wahyu-arif-kurniawan-915110131/",
+      "https://www.instagram.com/wahyuarifkurniawan/"
+    ]
+  }
+  </script>
 
-.portfolio-wrap img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+  <style>
+    .portfolio-wrap {
+    position: relative;
+  }
 
-
-
-</style>
+  .portfolio-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  </style>
 </head>
+
 
 <body>
 
@@ -159,54 +174,6 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Facts Section ======= -->
-    <!-- <section id="facts" class="facts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-  <div class="col-lg-3 col-md-6">
-    <div class="count-box">
-      <i class="bi bi-emoji-smile"></i>
-      <span data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="purecounter"></span>
-      <p>Happy Clients</p>
-    </div>
-  </div>
-
-  <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-    <div class="count-box">
-      <i class="bi bi-journal-richtext"></i>
-      <span data-purecounter-start="0" data-purecounter-end="33" data-purecounter-duration="1" class="purecounter"></span>
-      <p>Projects</p>
-    </div>
-  </div>
-
-  <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-    <div class="count-box">
-      <i class="bi bi-headset"></i>
-      <span data-purecounter-start="0" data-purecounter-end="1240" data-purecounter-duration="1" class="purecounter"></span>
-      <p>Hours Of Support</p>
-    </div>
-  </div>
-
-  <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-    <div class="count-box">
-      <i class="bi bi-award"></i>
-      <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-      <p>Awards</p>
-    </div>
-  </div>
-
-</div>
-
-
-      </div>
-    </section>End Facts Section -->
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
@@ -368,7 +335,6 @@
                 <p>Book</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-1.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 1"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -382,7 +348,6 @@
                 <p>Web</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-2.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -396,7 +361,6 @@
                 <p>Book</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-3.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 2"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -410,7 +374,6 @@
                 <p>Book</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-4.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 3"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -426,7 +389,6 @@
                 <p>Book</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-6.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 4"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -440,7 +402,6 @@
                 <p>Book</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-7.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 5"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -454,7 +415,6 @@
                 <p>Book</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-8.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 6"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
