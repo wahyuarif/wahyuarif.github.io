@@ -1,4 +1,4 @@
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
   // ── SECTIONS ──────────────────────────────────────
   var PAGES = [
     "home",
@@ -176,4 +176,33 @@
     openEffect: "zoom",
     closeEffect: "fade",
   });
-})();
+
+  // ── CONTACT FORM ──
+  var form = document.querySelector('form');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var popup = document.getElementById('success-popup');
+    var data = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+      .then(function (res) {
+        form.reset();
+        if (popup) popup.classList.add('show');
+      })
+      .catch(function () {
+        if (popup) popup.classList.add('show');
+      });
+  });
+
+  var closeBtn = document.getElementById('popup-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function () {
+      document.getElementById('success-popup').classList.remove('show');
+    });
+  }
+
+});
