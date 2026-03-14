@@ -11,10 +11,19 @@
     <link href="assets/img/favicon.png" rel="icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Outfit:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
+      onload="this.rel = 'stylesheet'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Outfit:wght@300;400;500;600&display=swap"
+    /></noscript>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -77,7 +86,11 @@
         <div class="dots"></div>
         <div class="arc"></div>
         <div class="photo">
-          <img src="assets/img/me.png" alt="Wahyu Arif Kurniawan" />
+          <img
+            src="assets/img/me.webp"
+            loading="lazy"
+            alt="Wahyu Arif Kurniawan"
+          />
         </div>
         <div class="h-info">
           <div class="h-label">My Profile</div>
@@ -186,7 +199,11 @@
         <div class="ab-circ1"></div>
         <div class="ab-circ2"></div>
         <div class="ab-img panel-inner">
-          <img src="assets/img/me-desc.png" alt="Wahyu Arif Kurniawan" />
+          <img
+            src="assets/img/me-desc.webp"
+            loading="lazy"
+            alt="Wahyu Arif Kurniawan"
+          />
         </div>
       </div>
     </div>
