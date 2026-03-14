@@ -1605,8 +1605,34 @@ footer {
   .stitle {
     font-size: 28px;
   }
+
+  .b1 {
+    left: auto;
+    right: 320px;
+  }
+  .b2 {
+    display: none;
+  }
+  .b3 {
+    left: auto;
+    right: 260px;
+  }
+  .arc {
+    top: 370px;
+    left: 180px;
+  }
 }
 @media (max-width: 480px) {
+  .b1 {
+    display: none;
+  }
+  .b2 {
+    display: none;
+  }
+  .b3 {
+    display: none;
+  }
+
   .pf-grid {
     grid-template-columns: 1fr;
   }
