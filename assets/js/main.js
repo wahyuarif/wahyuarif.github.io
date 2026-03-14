@@ -1,290 +1,179 @@
-/**
-* Template Name: MyResume
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
-  "use strict";
+(function () {
+  // ── SECTIONS ──────────────────────────────────────
+  var PAGES = [
+    "home",
+    "about",
+    "skills",
+    "resume",
+    "portfolio",
+    "services",
+    "contact",
+  ];
+  var ctrDone = false,
+    skillsDone = false;
 
-  /**
-   * Easy selector helper function
-   */
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
-    }
-  }
-
-  /**
-   * Easy event listener function
-   */
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
-      }
-    }
-  }
-
-  /**
-   * Easy on scroll event listener 
-   */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
-
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
-
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos,
-      behavior: 'smooth'
-    })
-  }
-
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('body').classList.toggle('mobile-nav-active')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
-
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-      let body = select('body')
-      if (body.classList.contains('mobile-nav-active')) {
-        body.classList.remove('mobile-nav-active')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
-
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
-  });
-
-  /**
-   * Preloader
-   */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
+  function go(id) {
+    PAGES.forEach(function (p) {
+      var s = document.getElementById("s-" + p);
+      if (s) s.classList.toggle("on", p === id);
+      var nl = document.getElementById("nl-" + p);
+      if (nl) nl.classList.toggle("on", p === id);
+      var dl = document.getElementById("dl-" + p);
+      if (dl) dl.classList.toggle("on", p === id);
     });
+    window.scrollTo(0, 0);
+    closeDrawer();
+    if (id === "about" && !ctrDone) {
+      ctrDone = true;
+      setTimeout(runCounters, 300);
+    }
+    if (id === "skills" && !skillsDone) {
+      skillsDone = true;
+      setTimeout(runBars, 150);
+    }
+    if (id === "portfolio") {
+      setTimeout(function () {
+        lb && lb.reload();
+      }, 100);
+    }
   }
 
-  /**
-   * Hero type effect
-   */
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
-
-  /**
-   * Skills animation
-   */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
-        });
-      }
-    })
-  }
-
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
+  // Wire nav links
+  PAGES.forEach(function (p) {
+    var nl = document.getElementById("nl-" + p);
+    if (nl)
+      nl.addEventListener("click", function () {
+        go(p);
       });
-
-       imagesLoaded(portfolioContainer, function () {
-          portfolioIsotope.layout();
-          AOS.refresh();
-        });
-
-      let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
-    }
-
+    var dl = document.getElementById("dl-" + p);
+    if (dl)
+      dl.addEventListener("click", function () {
+        go(p);
+      });
+  });
+  document.getElementById("logo").addEventListener("click", function () {
+    go("home");
+  });
+  document.getElementById("nc").addEventListener("click", function () {
+    go("contact");
+  });
+  document.getElementById("dc").addEventListener("click", function () {
+    go("contact");
+  });
+  document
+    .getElementById("hw-porto")
+    .addEventListener("click", function () {
+      go("portfolio");
+    });
+  document
+    .getElementById("cta-porto")
+    .addEventListener("click", function () {
+      go("portfolio");
+    });
+  document.querySelectorAll("[data-go]").forEach(function (el) {
+    el.addEventListener("click", function () {
+      go(el.getAttribute("data-go"));
+    });
   });
 
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Initiate portfolio details lightbox 
-   */
-  const portfolioDetailsLightbox = GLightbox({
-    selector: '.portfolio-details-lightbox',
-    width: '90%',
-    height: '90vh'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Animation on scroll
-   */
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    })
-  });
-
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
-
-  const updateAge = () => {
-    const ageElement = document.querySelector('#display-age');
-    if (ageElement) {
-      const birthDate = new Date("1995-05-26");
-      const today = new Date();
-      let age = today.getFullYear() - birthDate.getFullYear();
-      const m = today.getMonth() - birthDate.getMonth();
-      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-      }
-      ageElement.innerHTML = age;
-    }
+  // ── HAMBURGER ─────────────────────────────────────
+  var ham = document.getElementById("ham");
+  var drawer = document.getElementById("drawer");
+  var drawerOpen = false;
+  function closeDrawer() {
+    drawerOpen = false;
+    ham.classList.remove("x");
+    drawer.classList.remove("show");
   }
-  updateAge();
+  ham.addEventListener("click", function (e) {
+    e.stopPropagation();
+    drawerOpen = !drawerOpen;
+    ham.classList.toggle("x", drawerOpen);
+    drawer.classList.toggle("show", drawerOpen);
+  });
+  document.addEventListener("click", function (e) {
+    if (drawerOpen && !drawer.contains(e.target) && e.target !== ham) {
+      closeDrawer();
+    }
+  });
 
-})()
+  // ── TYPED TEXT ────────────────────────────────────
+  var tw = document.getElementById("tw");
+  var words = ["Designer", "Developer", "Freelancer"];
+  var wi = 0,
+    ci = 0,
+    del = false;
+  function type() {
+    var w = words[wi];
+    if (!del) {
+      tw.textContent = w.slice(0, ++ci);
+      if (ci === w.length) {
+        del = true;
+        setTimeout(type, 1600);
+        return;
+      }
+    } else {
+      tw.textContent = w.slice(0, --ci);
+      if (ci === 0) {
+        del = false;
+        wi = (wi + 1) % words.length;
+      }
+    }
+    setTimeout(type, del ? 60 : 110);
+  }
+  type();
+
+  // ── COUNTERS ──────────────────────────────────────
+  function runCounters() {
+    document.querySelectorAll(".ctr").forEach(function (el) {
+      var t = parseInt(el.getAttribute("data-t")),
+        n = 0,
+        step = t / (1400 / 16);
+      var iv = setInterval(function () {
+        n += step;
+        if (n >= t) {
+          el.textContent = t + "+";
+          clearInterval(iv);
+        } else {
+          el.textContent = Math.floor(n);
+        }
+      }, 16);
+    });
+  }
+
+  // ── SKILL BARS ────────────────────────────────────
+  function runBars() {
+    document.querySelectorAll(".sk-fill").forEach(function (b) {
+      b.style.width = b.getAttribute("data-w") + "%";
+    });
+  }
+
+  // ── PORTFOLIO FILTER ──────────────────────────────
+  document.querySelectorAll(".pf-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      document.querySelectorAll(".pf-btn").forEach(function (b) {
+        b.classList.remove("on");
+      });
+      btn.classList.add("on");
+      var f = btn.getAttribute("data-f");
+      document.querySelectorAll(".pc").forEach(function (c) {
+        c.classList.toggle(
+          "hide",
+          f !== "all" && c.getAttribute("data-c") !== f,
+        );
+      });
+      setTimeout(function () {
+        lb && lb.reload();
+      }, 80);
+    });
+  });
+
+  // ── LIGHTBOX ──────────────────────────────────────
+  var lb = GLightbox({
+    selector: ".glightbox",
+    touchNavigation: true,
+    loop: true,
+    openEffect: "zoom",
+    closeEffect: "fade",
+  });
+})();

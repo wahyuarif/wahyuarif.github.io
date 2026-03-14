@@ -1,628 +1,800 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Portofolio | Wahyu Arif Kurniawan</title>
-  <meta name="description" content="Wahyu Arif Kurniawan - UI/UX Designer & Web Developer berbasis di Wonosobo. Spesialis desain grafis, layouting, dan pengembangan sistem web.">
-  <meta name="keywords" content="Wahyu Arif Kurniawan, Web Developer Wonosobo, UI/UX Designer, Jasa Website Wonosobo, Portofolio Developer">
-
-  <!-- Preconnect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://wahyuarif.github.io/">
-  <meta property="og:title" content="Portofolio | Wahyu Arif Kurniawan">
-  <meta property="og:description" content="UI/UX Designer & Web Developer. Mari bangun solusi digital yang inspiratif bersama saya.">
-  <meta property="og:image" content="assets/img/profile-img.webp">
-
-  <!-- Icons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts (non-blocking) -->
-  <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Poppins&display=swap"
-        onload="this.rel='stylesheet'">
-
-  <!-- CORE CSS (BLOCKING – WAJIB) -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- NON CORE CSS (NON-BLOCKING) -->
-  <link rel="preload" as="style" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" onload="this.rel='stylesheet'">
-  <link rel="preload" as="style" href="assets/vendor/boxicons/css/boxicons.min.css" onload="this.rel='stylesheet'">
-  <link rel="preload" as="style" href="assets/vendor/aos/aos.css" onload="this.rel='stylesheet'">
-  <link rel="preload" as="style" href="assets/vendor/glightbox/css/glightbox.min.css" onload="this.rel='stylesheet'">
-  <link rel="preload" as="style" href="assets/vendor/swiper/swiper-bundle.min.css" onload="this.rel='stylesheet'">
-  <link rel="preload" as="style"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        onload="this.rel='stylesheet'">
-
-  <!-- Fallback -->
-  <noscript>
-    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
-    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
-    <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
-    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </noscript>
-
-  <!-- Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Wahyu Arif Kurniawan",
-    "url": "https://wahyuarif.github.io",
-    "jobTitle": "Web Developer & UI/UX Designer",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Wonosobo",
-      "addressCountry": "ID"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/wahyu-arif-kurniawan-915110131/",
-      "https://www.instagram.com/wahyuarifkurniawan/"
-    ]
-  }
-  </script>
-
-  <style>
-    .portfolio-wrap {
-    position: relative;
-  }
-
-  .portfolio-wrap img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  </style>
-</head>
-
-
-<body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active" aria-label="Home"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto" aria-label="Tentang Saya"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto" aria-label="Resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto" aria-label="Portofolio"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#services" class="nav-link scrollto" aria-label="Service"><i class="bx bx-server"></i> <span>Services</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto" aria-label="Contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wahyu Arif Kurniawan — Designer & Developer</title>
+    <meta
+      name="description"
+      content="Wahyu Arif Kurniawan - UI/UX Designer & Web Developer berbasis di Wonosobo."
+    />
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="nav">
+      <div class="logo" id="logo">W</div>
+      <ul class="nav-links">
+        <li><a id="nl-home" class="on">Home</a></li>
+        <li><a id="nl-about">About</a></li>
+        <li><a id="nl-skills">Skills</a></li>
+        <li><a id="nl-resume">Resume</a></li>
+        <li><a id="nl-portfolio">Portfolio</a></li>
+        <li><a id="nl-services">Services</a></li>
       </ul>
-    </nav><!-- .nav-menu -->
+      <button class="nav-contact" id="nc">Contact</button>
+      <button id="ham"><span></span><span></span><span></span></button>
+    </nav>
 
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Wahyu Arif Kurniawan</h1>
-      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer"></span></p>
-      <div class="social-links">
-        <a href="https://twitter.com/wahyuarif0_o" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/wahyu-arif-kurniawan-915110131/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://web.facebook.com/wahyuarifkurniawans/" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/wahyuarifkurniawan/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.threads.net/@wahyuarifkurniawan" class="google-plus"><i class="bx bxl-skype"></i></a>
+    <!-- DRAWER -->
+    <div id="drawer">
+      <a id="dl-home" class="on"><i class="fas fa-house"></i> Home</a>
+      <a id="dl-about"><i class="fas fa-user"></i> About</a>
+      <a id="dl-skills"><i class="fas fa-code"></i> Skills</a>
+      <a id="dl-resume"><i class="fas fa-file-lines"></i> Resume</a>
+      <a id="dl-portfolio"><i class="fas fa-images"></i> Portfolio</a>
+      <a id="dl-services"><i class="fas fa-layer-group"></i> Services</a>
+      <button class="d-contact" id="dc">Contact</button>
+      <div class="d-socials">
+        <a href="https://twitter.com/wahyuarif0_o" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/wahyu-arif-kurniawan-915110131/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.instagram.com/wahyuarifkurniawan/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://web.facebook.com/wahyuarifkurniawans/" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
       </div>
     </div>
-  </section><!-- End Hero -->
 
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Salam! Saya wahyu arif kurniawan, saya mendeskipkan diri sebagai Arsitek Digital All-in-One (desain grafis oke, ngoding oke) dengan kecintaan pada inovasi. Pengalaman bekerja sebagai Fundrising di organisasi nirlaba dan  freelance memberikan fondasi yang cukup kuat untuk eksplorasi kreatif dan solusi desain yang efektif. Dengan 4 tahun pengalaman di industri ini, saya telah berkontribusi pada proyek-proyek menarik seperti Layouting dan desain buku, majalah, buletin, pamflet, baliho dan Website.</p>
-          <p>Saya percaya bahwa desain yang baik dapat merubah cara orang berinteraksi dengan dunia digital, dan komitmen saya terhadap pengalaman pengguna unggul mencerminkan nilai inti saya. Selain itu, saya juga menikmati bekerja dalam tim kolaboratif dan meraih pencapaian bersama. Ayo jelajahi lebih lanjut mengenai karya saya dan mari kita buat sesuatu yang menginspirasi bersama!</p>
-
+    <!-- HOME -->
+    <div class="sec on" id="s-home">
+      <div class="h-left">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+        <div class="dots"></div>
+        <div class="arc"></div>
+        <div class="photo">
+          <img src="assets/img/me.png" alt="Wahyu Arif Kurniawan" />
         </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.webp" class="img-fluid" alt="Profile Pengembang">
+        <div class="h-info">
+          <div class="h-label">My Profile</div>
+          <div class="h-name">Wahyu Arif Kurniawan</div>
+          <div class="h-role">UI/UX Designer &amp;<br />Web Developer</div>
+          <div class="typed-wrap">
+            I'm a <span class="t-word" id="tw"></span
+            ><span class="t-cur"></span>
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>UI/UX Designer &amp; Web Developer.</h3>
-            <p class="fst-italic">
-              Berpengalaman dalam desain antarmuka dan pengembangan web, menggabungkan estetika dan fungsionalitas untuk solusi digital yang efisien.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>26 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://wahyuarif.github.io">wahyuarif.github.io</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+628562759112</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Wonosobo, Indonesia</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="display-age"></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>wahyuarifkurniawan@outlook.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
+          <span class="h-cta" id="cta-porto"
+            >Explore Work <i class="fas fa-arrow-right fa-xs"></i
+          ></span>
+        </div>
+      </div>
+      <div class="h-right">
+        <h1>Your creative partner for digital excellence</h1>
+        <p>
+          Arsitek Digital All-in-One berbasis di Wonosobo — dari desain buku
+          &amp; majalah hingga sistem web yang fungsional.
+        </p>
+        <button class="btn-w" id="hw-porto">Lihat Portofolio</button>
+        <div class="h-socials">
+          <a href="https://twitter.com/wahyuarif0_o" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/wahyuarifkurniawan/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/wahyuarifkurniawan/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://web.facebook.com/wahyuarifkurniawans/"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.threads.net/@wahyuarifkurniawan" target="_blank"
+            ><i class="fab fa-threads"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="sec" id="s-about">
+      <div class="ab-left">
+        <div class="eyebrow">Tentang Saya</div>
+        <h2 class="stitle">UI/UX Designer &amp;<br />Web Developer.</h2>
+        <p class="ab-desc">
+          Salam! Saya <strong>Wahyu Arif Kurniawan</strong>, seorang Arsitek
+          Digital All-in-One dengan kecintaan pada inovasi. Pengalaman sebagai
+          freelancer memberikan fondasi yang kuat untuk eksplorasi kreatif dan
+          solusi desain yang efektif.
+        </p>
+        <p class="ab-desc">
+          Dengan lebih dari 4 tahun pengalaman, saya telah berkontribusi pada
+          proyek layouting buku, majalah, buletin, pamflet, baliho, dan website.
+        </p>
+        <div class="ab-grid">
+          <div class="ab-pill">
+            <div class="ab-pill-l">Birthday</div>
+            <div class="ab-pill-v">26 Mei 1995</div>
+          </div>
+          <div class="ab-pill">
+            <div class="ab-pill-l">Kota</div>
+            <div class="ab-pill-v">Wonosobo, Indonesia</div>
+          </div>
+          <div class="ab-pill">
+            <div class="ab-pill-l">Phone</div>
+            <div class="ab-pill-v">+62 856-2759-112</div>
+          </div>
+          <div class="ab-pill">
+            <div class="ab-pill-l">Email</div>
+            <div class="ab-pill-v">
+              <a href="mailto:wahyu.arif.dev@gmail.com"
+                >wahyu.arif.dev@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="ab-pill">
+            <div class="ab-pill-l">Degree</div>
+            <div class="ab-pill-v">S1 Ilmu Komputer</div>
+          </div>
+          <div class="ab-pill">
+            <div class="ab-pill-l">Status</div>
+            <div class="ab-pill-v"><span class="avail">Available</span></div>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="st">
+            <div class="st-n ctr" data-t="7">0</div>
+            <div class="st-l">Tahun Pengalaman</div>
+          </div>
+          <div class="st">
+            <div class="st-n ctr" data-t="50">0</div>
+            <div class="st-l">Proyek Selesai</div>
+          </div>
+          <div class="st">
+            <div class="st-n ctr" data-t="30">0</div>
+            <div class="st-l">Klien Puas</div>
+          </div>
+        </div>
+      </div>
+      <div class="ab-right blue-panel">
+        <div class="ab-circ1"></div>
+        <div class="ab-circ2"></div>
+        <div class="ab-img panel-inner">
+          <img src="assets/img/me-desc.png" alt="Wahyu Arif Kurniawan" />
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="sec" id="s-skills">
+      <div class="sk-left">
+        <div class="eyebrow">Kemampuan</div>
+        <h2 class="stitle">Tech Stack &amp; Skills</h2>
+        <div class="sk-list">
+          <div class="sk-row">
+            <div class="sk-top">
+              <span class="sk-nm"><i class="fab fa-html5"></i>HTML</span
+              ><span class="sk-pc">95%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" data-w="95"></div></div>
+          </div>
+          <div class="sk-row">
+            <div class="sk-top">
+              <span class="sk-nm"><i class="fab fa-css3-alt"></i>CSS</span
+              ><span class="sk-pc">85%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" data-w="85"></div></div>
+          </div>
+          <div class="sk-row">
+            <div class="sk-top">
+              <span class="sk-nm"><i class="fab fa-js"></i>JavaScript</span
+              ><span class="sk-pc">70%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" data-w="70"></div></div>
+          </div>
+          <div class="sk-row">
+            <div class="sk-top">
+              <span class="sk-nm"><i class="fab fa-php"></i>PHP</span
+              ><span class="sk-pc">80%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" data-w="80"></div></div>
+          </div>
+          <div class="sk-row">
+            <div class="sk-top">
+              <span class="sk-nm"
+                ><i class="fab fa-wordpress"></i>WordPress / CMS</span
+              ><span class="sk-pc">85%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" data-w="85"></div></div>
+          </div>
+          <div class="sk-row">
+            <div class="sk-top">
+              <span class="sk-nm"
+                ><i class="fas fa-paint-brush"></i>Photoshop</span
+              ><span class="sk-pc">60%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" data-w="60"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="sk-right blue-panel">
+        <div class="sk-eyebrow">Tools &amp; Software</div>
+        <div class="tool-list panel-inner">
+          <div class="tool-item">
+            <div class="tool-ic"><i class="fab fa-html5"></i></div>
+            <div>
+              <div class="tool-nm">HTML / CSS / JS</div>
+              <div class="tool-tp">Frontend Development</div>
+            </div>
+          </div>
+          <div class="tool-item">
+            <div class="tool-ic"><i class="fab fa-php"></i></div>
+            <div>
+              <div class="tool-nm">PHP / Laravel</div>
+              <div class="tool-tp">Backend Development</div>
+            </div>
+          </div>
+          <div class="tool-item">
+            <div class="tool-ic"><i class="fab fa-wordpress"></i></div>
+            <div>
+              <div class="tool-nm">WordPress</div>
+              <div class="tool-tp">CMS Development</div>
+            </div>
+          </div>
+          <div class="tool-item">
+            <div class="tool-ic"><i class="fas fa-paint-brush"></i></div>
+            <div>
+              <div class="tool-nm">Photoshop &amp; Illustrator</div>
+              <div class="tool-tp">Graphic Design</div>
+            </div>
+          </div>
+          <div class="tool-item">
+            <div class="tool-ic"><i class="fab fa-figma"></i></div>
+            <div>
+              <div class="tool-nm">Figma</div>
+              <div class="tool-tp">UI/UX Design</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESUME -->
+    <div class="sec" id="s-resume">
+      <div class="rs-left blue-panel">
+        <div class="stitle-w panel-inner">Resume &amp;<br />Experience</div>
+        <p>
+          Generalis berpengalaman di web development, desain grafis, dan TI
+          sejak 2014.
+        </p>
+        <div class="rs-box">
+          <h4>Wahyu Arif Kurniawan</h4>
+          <p>UI/UX Designer &amp; Web Developer · Wonosobo</p>
+        </div>
+      </div>
+      <div class="rs-right">
+        <div class="rs-cols">
+          <div class="rs-col">
+            <h3>Pendidikan</h3>
+            <div class="tl">
+              <div class="tl-y">2014 — 2018</div>
+              <div class="tl-t">S1 Ilmu Komputer</div>
+              <div class="tl-o">Universitas Sains Al-Qur'an Wonosobo</div>
+              <div class="tl-d">
+                Pemrograman, desain grafis, basis data, dan studi Al-Qur'an.
               </div>
             </div>
-            <p>
-              Di balik setiap baris kode dan desain antarmuka, ada perjuangan yang tidak terlihat — melawan rasa cemas, menjaga kesehatan di tengah tekanan, dan terus belajar meski sering merasa tertinggal. Saya percaya, karya terbaik lahir bukan dari kesempurnaan, tapi dari konsistensi dan keberanian untuk terus mencoba.
+          </div>
+          <div class="rs-col">
+            <h3>Pengalaman Kerja</h3>
+            <div class="tl">
+              <div class="tl-y">2018 — Sekarang</div>
+              <div class="tl-t">Full-Stack Developer &amp; Designer</div>
+              <div class="tl-o">Freelance · Wonosobo</div>
+              <ul class="tl-d">
+                <li>UI dengan HTML, CSS, JS, dan PHP</li>
+                <li>Sistem manajemen pondok pesantren</li>
+                <li>Desain grafis: banner, undangan, promosi</li>
+                <li>Desain cetak &amp; digital untuk UMKM</li>
+              </ul>
+            </div>
+            <div class="tl">
+              <div class="tl-y">2017 — 2018</div>
+              <div class="tl-t">IT Support &amp; E-Gov Developer</div>
+              <div class="tl-o">Pemkab Banjarnegara · PKL</div>
+              <ul class="tl-d">
+                <li>Pengembangan sistem e-Government</li>
+                <li>Troubleshooting jaringan &amp; komputer</li>
+                <li>Pelatihan internal pegawai</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div class="sec" id="s-portfolio" style="flex-direction: column">
+      <div class="pf-hd">
+        <div>
+          <div class="eyebrow">Karya</div>
+          <h2 class="stitle" style="margin-bottom: 0">Portfolio</h2>
+        </div>
+        <div class="pf-filters">
+          <button class="pf-btn on" data-f="all">Semua</button>
+          <button class="pf-btn" data-f="book">Book</button>
+          <button class="pf-btn" data-f="web">Web</button>
+          <button class="pf-btn" data-f="other">Other</button>
+        </div>
+      </div>
+      <div class="pf-grid">
+        <div class="pc" data-c="book">
+          <div class="pc-iw">
+            <img
+              loading="lazy"
+              src="assets/img/portfolio/portfolio-1.webp"
+              alt="Book 1"
+            />
+            <div class="pc-ov">
+              <a
+                href="assets/img/portfolio/portfolio-1.webp"
+                class="glightbox"
+                data-gallery="g1"
+                data-title="Book 1"
+                ><i class="fas fa-expand-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="pc-bd">
+            <div>
+              <div class="pc-cat">Book</div>
+              <div class="pc-tit">Book 1</div>
+            </div>
+            <div class="pc-arr"><i class="fas fa-arrow-up-right"></i></div>
+          </div>
+        </div>
+        <div class="pc" data-c="web">
+          <div class="pc-iw">
+            <img
+              loading="lazy"
+              src="assets/img/portfolio/web1.webp"
+              alt="Web 1"
+            />
+            <div class="pc-ov">
+              <a
+                href="assets/img/portfolio/web1.webp"
+                class="glightbox"
+                data-gallery="g1"
+                data-title="Web 1"
+                ><i class="fas fa-expand-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="pc-bd">
+            <div>
+              <div class="pc-cat">Web</div>
+              <div class="pc-tit">Web 1</div>
+            </div>
+            <div class="pc-arr"><i class="fas fa-arrow-up-right"></i></div>
+          </div>
+        </div>
+        <div class="pc" data-c="book">
+          <div class="pc-iw">
+            <img
+              loading="lazy"
+              src="assets/img/portfolio/portfolio-3.webp"
+              alt="Book 2"
+            />
+            <div class="pc-ov">
+              <a
+                href="assets/img/portfolio/portfolio-3.webp"
+                class="glightbox"
+                data-gallery="g1"
+                data-title="Book 2"
+                ><i class="fas fa-expand-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="pc-bd">
+            <div>
+              <div class="pc-cat">Book</div>
+              <div class="pc-tit">Book 2</div>
+            </div>
+            <div class="pc-arr"><i class="fas fa-arrow-up-right"></i></div>
+          </div>
+        </div>
+        <div class="pc" data-c="book">
+          <div class="pc-iw">
+            <img
+              loading="lazy"
+              src="assets/img/portfolio/portfolio-4.webp"
+              alt="Book 3"
+            />
+            <div class="pc-ov">
+              <a
+                href="assets/img/portfolio/portfolio-4.webp"
+                class="glightbox"
+                data-gallery="g1"
+                data-title="Book 3"
+                ><i class="fas fa-expand-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="pc-bd">
+            <div>
+              <div class="pc-cat">Book</div>
+              <div class="pc-tit">Book 3</div>
+            </div>
+            <div class="pc-arr"><i class="fas fa-arrow-up-right"></i></div>
+          </div>
+        </div>
+        <div class="pc" data-c="book">
+          <div class="pc-iw">
+            <img
+              loading="lazy"
+              src="assets/img/portfolio/portfolio-6.webp"
+              alt="Book 4"
+            />
+            <div class="pc-ov">
+              <a
+                href="assets/img/portfolio/portfolio-6.webp"
+                class="glightbox"
+                data-gallery="g1"
+                data-title="Book 4"
+                ><i class="fas fa-expand-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="pc-bd">
+            <div>
+              <div class="pc-cat">Book</div>
+              <div class="pc-tit">Book 4</div>
+            </div>
+            <div class="pc-arr"><i class="fas fa-arrow-up-right"></i></div>
+          </div>
+        </div>
+        <div class="pc" data-c="book">
+          <div class="pc-iw">
+            <img
+              loading="lazy"
+              src="assets/img/portfolio/portfolio-7.webp"
+              alt="Book 5"
+            />
+            <div class="pc-ov">
+              <a
+                href="assets/img/portfolio/portfolio-7.webp"
+                class="glightbox"
+                data-gallery="g1"
+                data-title="Book 5"
+                ><i class="fas fa-expand-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="pc-bd">
+            <div>
+              <div class="pc-cat">Book</div>
+              <div class="pc-tit">Book 5</div>
+            </div>
+            <div class="pc-arr"><i class="fas fa-arrow-up-right"></i></div>
+          </div>
+        </div>
+        <div class="pc" data-c="book">
+          <div class="pc-iw">
+            <img
+              loading="lazy"
+              src="assets/img/portfolio/portfolio-8.webp"
+              alt="Book 6"
+            />
+            <div class="pc-ov">
+              <a
+                href="assets/img/portfolio/portfolio-8.webp"
+                class="glightbox"
+                data-gallery="g1"
+                data-title="Book 6"
+                ><i class="fas fa-expand-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="pc-bd">
+            <div>
+              <div class="pc-cat">Book</div>
+              <div class="pc-tit">Book 6</div>
+            </div>
+            <div class="pc-arr"><i class="fas fa-arrow-up-right"></i></div>
+          </div>
+        </div>
+        <div class="pc" data-c="book">
+          <div class="pc-iw">
+            <img
+              loading="lazy"
+              src="assets/img/portfolio/portfolio-9.webp"
+              alt="Book 7"
+            />
+            <div class="pc-ov">
+              <a
+                href="assets/img/portfolio/portfolio-9.webp"
+                class="glightbox"
+                data-gallery="g1"
+                data-title="Book 7"
+                ><i class="fas fa-expand-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="pc-bd">
+            <div>
+              <div class="pc-cat">Book</div>
+              <div class="pc-tit">Book 7</div>
+            </div>
+            <div class="pc-arr"><i class="fas fa-arrow-up-right"></i></div>
+          </div>
+        </div>
+        <div class="pc" data-c="book">
+          <div class="pc-iw">
+            <img
+              loading="lazy"
+              src="assets/img/portfolio/portfolio-2.webp"
+              alt="Book 8"
+            />
+            <div class="pc-ov">
+              <a
+                href="assets/img/portfolio/portfolio-2.webp"
+                class="glightbox"
+                data-gallery="g1"
+                data-title="Book 8"
+                ><i class="fas fa-expand-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="pc-bd">
+            <div>
+              <div class="pc-cat">Book</div>
+              <div class="pc-tit">Book 8</div>
+            </div>
+            <div class="pc-arr"><i class="fas fa-arrow-up-right"></i></div>
+          </div>
+        </div>
+        <div class="pc" data-c="other">
+          <div class="pc-iw">
+            <img
+              loading="lazy"
+              src="assets/img/portfolio/portfolio-5.webp"
+              alt="Other 1"
+            />
+            <div class="pc-ov">
+              <a
+                href="assets/img/portfolio/portfolio-5.webp"
+                class="glightbox"
+                data-gallery="g1"
+                data-title="Other 1"
+                ><i class="fas fa-expand-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="pc-bd">
+            <div>
+              <div class="pc-cat">Other</div>
+              <div class="pc-tit">Other 1</div>
+            </div>
+            <div class="pc-arr"><i class="fas fa-arrow-up-right"></i></div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="ft-brand">Wahyu Arif Kurniawan</div>
+        <div class="ft-copy">&copy; 2025 All Rights Reserved</div>
+        <div class="ft-links">
+          <span data-go="about">About</span
+          ><span data-go="portfolio">Portfolio</span
+          ><span data-go="contact">Contact</span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="sec" id="s-services" style="flex-direction: column">
+      <div class="sv-top">
+        <div class="sv-blue blue-panel">
+          <div class="panel-inner">
+            <div class="sk-eyebrow">Layanan</div>
+            <div class="stitle-w">Apa Yang<br />Saya<br />Tawarkan</div>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 13px;
+                line-height: 1.8;
+                font-weight: 300;
+              "
+            >
+              Solusi digital profesional untuk individu, UMKM, dan lembaga
+              pendidikan.
             </p>
           </div>
         </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-     <div class="section-title">
-  <h2>Skills</h2>
-  <p>Dengan latar belakang sebagai generalis, saya menguasai berbagai keterampilan web development dan desain yang memungkinkan saya bersaing dalam proyek digital secara fleksibel dan efisien.</p>
-</div>
-
-<div class="row skills-content">
-
-  <div class="col-lg-6">
-
-    <div class="progress">
-      <span class="skill">HTML <i class="val">95%</i></span>
-      <div class="progress-bar-wrap">
-        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Kemampuan HTML 95 persen"></div>
-      </div>
-    </div>
-
-    <div class="progress">
-      <span class="skill">CSS <i class="val">85%</i></span>
-      <div class="progress-bar-wrap">
-        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Kemampuan CSS 85 persen"></div>
-      </div>
-    </div>
-
-    <div class="progress">
-      <span class="skill">JavaScript <i class="val">70%</i></span>
-      <div class="progress-bar-wrap">
-        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"   aria-label="Kemampuan JavaScript 95 persen"></div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="col-lg-6">
-
-    <div class="progress">
-      <span class="skill">PHP <i class="val">80%</i></span>
-      <div class="progress-bar-wrap">
-        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"   aria-label="Kemampuan PHP 80 persen"></div>
-      </div>
-    </div>
-
-    <div class="progress">
-      <span class="skill">WordPress/CMS <i class="val">85%</i></span>
-      <div class="progress-bar-wrap">
-        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"   aria-label="Kemampuan WordPress 85 persen"></div>
-      </div>
-    </div>
-
-    <div class="progress">
-      <span class="skill">Photoshop <i class="val">60%</i></span>
-      <div class="progress-bar-wrap">
-        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Kemampuan Photoshop 60 persen"></div>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-<section id="resume" class="resume">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2>Resume</h2>
-      <p>Seorang generalis dengan pengalaman di berbagai bidang pengembangan web, desain grafis, dan teknologi informasi. Memiliki komitmen kuat terhadap pembelajaran berkelanjutan dan pengembangan solusi digital yang efektif.</p>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-6">
-        <h3 class="resume-title">Summary</h3>
-        <div class="resume-item pb-0">
-          <h4>Wahyu Arif Kurniawan</h4>
-          <p><em>UI/UX Designer & Web Developer dengan latar belakang pendidikan di bidang komputer serta pengalaman dalam desain grafis, pengembangan sistem web, dan manajemen database sejak 2014.</em></p>
-          <ul>
-            <li>Jl. Masjid No. 13, Kauman Utara, Wonosobo 56311</li>
-            <li>+62 856-2759-112</li>
-            <li>wahyuarifkurniawan@outlook.com</li>
-          </ul>
-        </div>
-
-        <h3 class="resume-title">Education</h3>
-        <div class="resume-item">
-          <h4>Bachelor's Degree in Computer Science</h4>
-          <h5>2014 - 2018</h5>
-          <p><em>Universitas Sains Al-Qur'an Wonosobo</em></p>
-          <p>Mempelajari dasar-dasar pemrograman, desain grafis, pengelolaan basis data, serta membangun fondasi spiritual melalui studi Al-Qur'an.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <h3 class="resume-title">Professional Experience</h3>
-        <div class="resume-item">
-          <h4>Full-Stack Web Developer & Designer (Freelance)</h4>
-          <h5>2018 - Present</h5>
-          <p><em>Remote / Wonosobo</em></p>
-          <ul>
-            <li>Membangun dan merancang antarmuka pengguna menggunakan HTML, CSS, JavaScript, dan PHP</li>
-            <li>Mengembangkan sistem pendaftaran santri dan aplikasi manajemen pondok pesantren</li>
-            <li>Desain grafis untuk berbagai kebutuhan seperti banner, kartu undangan, dan materi promosi</li>
-            <li>Terlibat dalam desain cetak dan digital untuk usaha percetakan undangan serta promosi UMKM lokal</li>
-          </ul>
-        </div>
-        <div class="resume-item">
-          <h4>IT Support & E-Government Developer (PKL / Magang)</h4>
-          <h5>2017 - 2018</h5>
-          <p><em>Pemerintah Kabupaten Banjarnegara</em></p>
-          <ul>
-            <li>Berperan dalam pengembangan sistem e-Government dan aplikasi pelayanan publik</li>
-            <li>Melakukan troubleshooting dan support jaringan serta komputer pengguna</li>
-            <li>Berkoordinasi dalam penyusunan data dan pelatihan internal pegawai</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section><!-- End Resume Section -->
-
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>
-            Kumpulan karya yang mencerminkan keahlian saya dalam layouting, desain grafis, dan pengembangan web. Mulai dari perancangan tampilan antarmuka yang responsif, pembuatan materi visual, hingga pengembangan website fungsional untuk berbagai kebutuhan digital.
+        <div class="sv-intro">
+          <div class="eyebrow">Spesialisasi</div>
+          <h2 class="stitle">Solusi kreatif<br />untuk kebutuhan digital.</h2>
+          <p
+            style="
+              color: #668;
+              font-size: 14px;
+              line-height: 1.9;
+              font-weight: 300;
+            "
+          >
+            Dari desain visual yang memukau hingga sistem web fungsional — saya
+            hadir sebagai mitra digital terpercaya.
           </p>
         </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Book</li>
-              <li data-filter=".filter-web">Web</li>
-              <li data-filter=".filter-card">Other</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img loading="lazy" decoding="async" src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="Sampul Buku Mbah Mad">
-              <div class="portfolio-info">
-                <h4>Book 1</h4>
-                <p>Book</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 1"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img loading="lazy" decoding="async" src="assets/img/portfolio/web1.webp" class="img-fluid" alt="Sampul Buku Mbah Mad">
-              <div class="portfolio-info">
-                <h4>Web 1</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img loading="lazy" decoding="async" src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Book 2</h4>
-                <p>Book</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 2"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img loading="lazy" decoding="async" src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="Sampul Buku Mbah Mad">
-              <div class="portfolio-info">
-                <h4>Book 3</h4>
-                <p>Book</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 3"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img loading="lazy" decoding="async" src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="Buku Saku Nikah">
-              <div class="portfolio-info">
-                <h4>Book 4</h4>
-                <p>Book</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 4"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img loading="lazy" decoding="async" src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="Sampul Buku Kyai Kampung">
-              <div class="portfolio-info">
-                <h4>Book 5</h4>
-                <p>Book</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 5"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img loading="lazy" decoding="async" src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="Sampul Buku Kang Trontong">
-              <div class="portfolio-info">
-                <h4>Book 6</h4>
-                <p>Book</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 6"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img loading="lazy" decoding="async" src="assets/img/portfolio/portfolio-9.webp" class="img-fluid" alt="Sampul Buku Dari Pada Ngrasani">
-              <div class="portfolio-info">
-                <h4>Book 7</h4>
-                <p>Book</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 7"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img loading="lazy" decoding="async" src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="Sampul Buku Keris Kang Trontong">
-              <div class="portfolio-info">
-                <h4>Book 8</h4>
-                <p>Book</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Book 8"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img loading="lazy" decoding="async" src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Other 1</h4>
-                <p>Other</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Other 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-       <div class="section-title">
-  <h2>Services</h2>
-  <p>Saya menyediakan layanan desain layout, pengembangan website, dan desain grafis berbasis pengalaman dan kebutuhan riil, termasuk solusi digital untuk lingkungan pondok pesantren serta pembuatan konten edukatif.</p>
-</div>
-
-<div class="row">
-
-  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-    <div class="icon-box iconbox-blue">
-      <div class="icon">
-        <i class="bx bx-layout"></i>
+      <div class="sv-grid">
+        <div class="sv-card">
+          <div class="sv-num">01</div>
+          <div class="sv-ic"><i class="fas fa-desktop"></i></div>
+          <div class="sv-tit">Web Layout Design</div>
+          <p class="sv-desc">
+            Desain tata letak antarmuka web responsif dan ramah pengguna dengan
+            pendekatan visual yang bersih dan efisien.
+          </p>
+        </div>
+        <div class="sv-card">
+          <div class="sv-num">02</div>
+          <div class="sv-ic"><i class="fas fa-code"></i></div>
+          <div class="sv-tit">Web Development</div>
+          <p class="sv-desc">
+            Pengembangan website statis dan dinamis, termasuk sistem manajemen
+            pondok berbasis Laravel atau PHP native.
+          </p>
+        </div>
+        <div class="sv-card">
+          <div class="sv-num">03</div>
+          <div class="sv-ic"><i class="fas fa-paintbrush"></i></div>
+          <div class="sv-tit">Graphic Design</div>
+          <p class="sv-desc">
+            Desain grafis: banner, kartu undangan, buku, majalah, dan materi
+            promosi dengan Photoshop &amp; Illustrator.
+          </p>
+        </div>
       </div>
-      <h4><a href="#">Web Layout Design</a></h4>
-      <p>Desain tata letak antarmuka web yang responsif dan ramah pengguna, menggunakan pendekatan visual yang bersih dan efisien.</p>
+      <footer>
+        <div class="ft-brand">Wahyu Arif Kurniawan</div>
+        <div class="ft-copy">&copy; 2025 All Rights Reserved</div>
+        <div class="ft-links">
+          <span data-go="about">About</span
+          ><span data-go="portfolio">Portfolio</span
+          ><span data-go="contact">Contact</span>
+        </div>
+      </footer>
     </div>
-  </div>
 
-  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-    <div class="icon-box iconbox-orange">
-      <div class="icon">
-        <i class="bx bx-code-alt"></i>
-      </div>
-      <h4><a href="#">Web Development</a></h4>
-      <p>Pengembangan website statis dan dinamis, termasuk sistem manajemen pondok berbasis Laravel atau PHP native.</p>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-    <div class="icon-box iconbox-pink">
-      <div class="icon">
-        <i class="bx bx-brush"></i>
-      </div>
-      <h4><a href="#">Graphic Design</a></h4>
-      <p>Pembuatan desain grafis seperti banner, kartu undangan, dan kebutuhan promosi lainnya dengan software seperti Photoshop & Illustrator.</p>
-    </div>
-  </div>
-
-</div>
-
-
-      </div>
-    </section><!-- End Services Section -->
-
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row mt-1">
-
-          <div class="col-lg-4">
-          <div class="info">
-            <div class="address">
-              <i class="bi bi-geo-alt"></i>
-              <h4>Location:</h4>
-              <p>Jl. Masjid No. 13, Kauman Utara, Wonosobo 56311</p>
-            </div>
-
-            <div class="email">
-              <i class="bi bi-envelope"></i>
-              <h4>Email:</h4>
-              <p>wahyuarifkurniawan@outlook.com</p>
-            </div>
-
-            <div class="phone">
-              <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
-              <p>+62 856-2759-112</p>
+    <!-- CONTACT -->
+    <div class="sec" id="s-contact">
+      <div class="ct-left blue-panel">
+        <div class="panel-inner">
+          <div class="stitle-w">Mari<br />Berkolaborasi</div>
+          <div class="ct-item">
+            <div class="ct-ic"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="ct-lbl">Lokasi</div>
+              <div class="ct-val">
+                Jl. Masjid No. 13, Kauman Utara, Wonosobo 56311
+              </div>
             </div>
           </div>
-        </div>
-
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="https://formspree.io/f/mnnvdqno" method="POST" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
+          <div class="ct-item">
+            <div class="ct-ic"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="ct-lbl">Email</div>
+              <div class="ct-val">wahyu.arif.dev@gmail.com</div>
+            </div>
           </div>
-
+          <div class="ct-item">
+            <div class="ct-ic"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="ct-lbl">Telepon</div>
+              <div class="ct-val">+62 856-2759-112</div>
+            </div>
+          </div>
+          <div class="ct-soc">
+            <a
+              href="https://www.linkedin.com/in/wahyu-arif-kurniawan-915110131/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/wahyuarifkurniawan/"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://web.facebook.com/wahyuarifkurniawans/"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/wahyuarif0_o" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-  <div class="container">
-    <h3>Wahyu Arif Kurniawan</h3>
-    <p>Web developer & desainer grafis dengan fokus pada solusi digital untuk pondok pesantren dan konten edukatif Islami.</p>
-      <div class="social-links">
-        
-        <a href="https://www.linkedin.com/in/wahyu-arif-kurniawan-915110131/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://www.threads.net/@wahyuarifkurniawan" class="threads">
-  <i class="fas fa-link"></i> <!-- bisa juga pakai fas fa-circle, dsb -->
-</a>
-        <a href="https://www.instagram.com/wahyuarifkurniawan/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://web.facebook.com/wahyuarifkurniawans/" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://twitter.com/wahyuarif0_o" class="twitter"><i class="bx bxl-twitter"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>wahyu arif</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <div class="ct-right">
+        <div class="eyebrow">Kirim Pesan</div>
+        <h2 class="stitle" style="font-size: 30px; margin-bottom: 28px">
+          Ada proyek menarik?<br />Hubungi saya!
+        </h2>
+        <form action="https://formspree.io/f/mnnvdqno" method="POST">
+          <div class="frow">
+            <div>
+              <label class="flbl">Nama</label
+              ><input
+                class="finp"
+                type="text"
+                name="name"
+                placeholder="Nama kamu"
+                required
+              />
+            </div>
+            <div>
+              <label class="flbl">Email</label
+              ><input
+                class="finp"
+                type="email"
+                name="email"
+                placeholder="email@kamu.com"
+                required
+              />
+            </div>
+          </div>
+          <label class="flbl">Subjek</label
+          ><input
+            class="finp"
+            type="text"
+            name="subject"
+            placeholder="Subjek pesan"
+            required
+          />
+          <label class="flbl">Pesan</label
+          ><textarea
+            class="finp"
+            name="message"
+            placeholder="Ceritakan proyekmu..."
+          ></textarea>
+          <button type="submit" class="btn-b">
+            <i class="fas fa-paper-plane"></i> Kirim Pesan
+          </button>
+        </form>
       </div>
     </div>
-  </footer><!-- End Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-
-  <script defer src="assets/vendor/aos/aos.js"></script>
-  <script defer src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script defer src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <script defer src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-  <script defer src="assets/js/main.js"></script>
-
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
